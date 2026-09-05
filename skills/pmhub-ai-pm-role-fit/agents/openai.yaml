@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜AI 产品经理方向诊断"
+  short_description: "一次证据访谈，排序九类 AI 产品经理方向与行动路线"
+  default_prompt: "使用 $pmhub-ai-pm-role-fit 对我做一次自适应访谈，给出 AI 产品经理方向双榜、依据和验证计划。"

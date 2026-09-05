@@ -1,25 +1,25 @@
 {
   "name": "pmhub",
-  "version": "0.1.0",
-  "description": "A modular product-manager job-search toolkit for JD analysis, evidence-based resumes, and last-hour interview preparation.",
+  "version": "0.2.0",
+  "description": "A modular product-manager job-search toolkit with AI PM role-fit diagnosis, JD analysis, evidence-based resumes, and last-hour interview preparation.",
   "author": {
     "name": "zebrazjx",
     "url": "https://github.com/zebrazjx"
   },
   "homepage": "https://github.com/zebrazjx/pmhub",
   "repository": "https://github.com/zebrazjx/pmhub",
-  "keywords": ["product-manager", "job-search", "resume", "interview", "jd-analysis", "skills"],
+  "keywords": ["product-manager", "ai-product-manager", "career-fit", "job-search", "resume", "interview", "jd-analysis", "skills"],
   "skills": "./skills/",
   "interface": {
     "displayName": "PMHub",
     "shortDescription": "模块化产品经理求职 Skill 套件",
-    "longDescription": "从单条岗位 JD 倒推真实任务与证据缺口，生成可编辑的一页 A4 HTML 简历，并为临近的产品经理面试准备定向急救包。",
+    "longDescription": "用一次证据访谈比较九类 AI 产品经理方向，再从具体 JD 倒推真实任务与证据缺口，生成可编辑的一页 A4 HTML 简历，并为临近面试准备定向急救包。",
     "developerName": "zebrazjx",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://github.com/zebrazjx/pmhub",
     "defaultPrompt": [
-      "用 PMHub 帮我判断这条 JD 是否值得投，并规划下一步。",
+      "用 PMHub 先诊断我适合的 AI 产品经理方向，再判断目标 JD 是否值得投。",
       "根据目标 JD，把我的简历做成真实匹配的一页 A4 HTML。",
       "我马上要面试，请按剩余时间生成产品经理面试急救包。"
     ]

@@ -15,3 +15,8 @@ jobs:
         run: |
           node --check skills/pmhub-ai-native-resume/assets/template/resume-data.js
           node --check skills/pmhub-ai-native-resume/assets/template/script.js
+      - name: Validate role-fit scoring model
+        run: |
+          python3 -m py_compile skills/pmhub-ai-pm-role-fit/scripts/score_assessment.py skills/pmhub-ai-pm-role-fit/scripts/audit_coverage.py
+          python3 skills/pmhub-ai-pm-role-fit/scripts/score_assessment.py --self-test
+          python3 skills/pmhub-ai-pm-role-fit/scripts/audit_coverage.py

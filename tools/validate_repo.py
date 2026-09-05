@@ -14,6 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILLS_DIR = ROOT / "skills"
 EXPECTED_SKILLS = {
     "pmhub",
+    "pmhub-ai-pm-role-fit",
     "pmhub-jd-reverse-engineer",
     "pmhub-ai-native-resume",
     "pmhub-interview-1h-rescue",
