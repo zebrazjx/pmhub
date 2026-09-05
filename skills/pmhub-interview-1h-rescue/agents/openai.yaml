@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜面试 1 小时急救"
+  short_description: "用简历和目标 JD 生成产品经理临场面试作战包与最后速记页"
+  default_prompt: "使用 $pmhub-interview-1h-rescue，根据我的简历和目标 JD，为这场产品经理面试生成一份与剩余时间匹配的急救包。"

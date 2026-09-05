@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜AI 原生简历"
+  short_description: "将 PDF／DOCX 简历转成可编辑的一页 A4 HTML，并按 JD 真实定制"
+  default_prompt: "使用 $pmhub-ai-native-resume 将我的简历转成一页 A4 HTML，并根据目标 JD 做证据驱动的定制。"

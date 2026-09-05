@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜JD 倒推器"
+  short_description: "从单条岗位 JD 倒推真实任务、证据缺口与求职行动"
+  default_prompt: "使用 $pmhub-jd-reverse-engineer 拆解这条岗位 JD，并倒推我最该准备的证据与下一步。"
