@@ -275,7 +275,11 @@ def entry_state(readiness: Interval, gate: dict[str, Any]) -> str:
 
 
 def intervals_overlap(first: Interval, second: Interval) -> bool:
-    return max(first.low, second.low) <= min(first.high, second.high)
+    left_edge = max(first.low, second.low)
+    right_edge = min(first.high, second.high)
+    return left_edge <= right_edge or math.isclose(
+        left_edge, right_edge, rel_tol=1e-12, abs_tol=1e-9
+    )
 
 
 def score_payload(payload: dict[str, Any]) -> dict[str, Any]:
@@ -804,6 +808,10 @@ def self_test() -> None:
     assert first["roles"] == labeled["roles"]
     assert first["current_diagnostics"] == labeled["current_diagnostics"]
     assert first["development_diagnostics"] == labeled["development_diagnostics"]
+
+    # Mathematically touching endpoints must survive binary-float representation noise.
+    assert intervals_overlap(Interval(0.1 + 0.2, 1.0), Interval(0.0, 0.3))
+    assert not intervals_overlap(Interval(0.300001, 1.0), Interval(0.0, 0.3))
 
     # Inclusive endpoint contact is overlap and cannot produce High confidence.
     touch_roles = role_set()

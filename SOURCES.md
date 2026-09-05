@@ -6,7 +6,7 @@ PMHub 0.2.0 包含以下既有 Skill，并在套件内使用统一的 `pmhub-` �
 
 - Source skill: `ai-pm-role-fit`
 - Source snapshot: `2026-09-05`, version `1.0.0`
-- PMHub name: `pmhub-ai-pm-role-fit`
+- PMHub name: `pmhub-ai-pm-role-fit`, component version `1.0.1`
 - Included: `SKILL.md`, five reference files, deterministic scorer and source-coverage audit.
 - Adapted: PMHub UI metadata, routing boundaries, cross-stage handoff and a portable scoring-command example.
 - Verification note: the bundled Feishu knowledge files are dated snapshots; their original Feishu links may require account permission and are not runtime dependencies.

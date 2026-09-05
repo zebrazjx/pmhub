@@ -2,7 +2,7 @@
 name: pmhub-ai-pm-role-fit
 description: 通过一次基于行为证据的自适应访谈，比较九类 AI 产品经理方向，分别排序当前切入准备度与长期发展潜力，并给出现实检验和补缺路线。用户不知道适合哪类 AI 产品经理、准备转型、选择实习／校招方向或希望用一次诊断替代多张岗位自查卡时使用；不要用于只分析一条具体 JD、直接改写简历或临场面试急救。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
   suite: "pmhub"
   source-skill: "ai-pm-role-fit"
   source-snapshot: "2026-09-05"
