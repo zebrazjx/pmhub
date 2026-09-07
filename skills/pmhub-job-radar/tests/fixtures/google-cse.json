@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "title": "Product Manager, AI Copilot - Acme Careers",
+      "link": "https://careers.acme.example/jobs/copilot-pm?utm_source=google",
+      "displayLink": "careers.acme.example",
+      "snippet": "Acme is hiring a product manager for its AI copilot team.",
+      "cacheId": "cse-1"
+    },
+    {
+      "title": "AI Product Manager - Restricted Platform",
+      "link": "https://www.zhipin.com/job_detail/restricted.html",
+      "displayLink": "www.zhipin.com",
+      "snippet": "This result must be skipped and never fetched."
+    }
+  ]
+}

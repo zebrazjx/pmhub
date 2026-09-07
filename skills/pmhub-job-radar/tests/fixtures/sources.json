@@ -1,0 +1,21 @@
+{
+  "schema_version": "1",
+  "defaults": {
+    "fresh_days": 7,
+    "stale_days": 30,
+    "close_after_misses": 2,
+    "request_interval_seconds": 0.2,
+    "timeout_seconds": 5,
+    "max_response_bytes": 1048576,
+    "max_retries": 0
+  },
+  "sources": [
+    {"id": "acme-gh", "provider": "greenhouse", "company": "Acme", "board_token": "acme"},
+    {"id": "acme-lever", "provider": "lever", "company": "Acme", "site": "acme", "max_results": 100},
+    {"id": "acme-ashby", "provider": "ashby", "company": "Acme", "board": "Acme"},
+    {"id": "acme-sr", "provider": "smartrecruiters", "company": "Acme", "company_identifier": "acme", "max_results": 100},
+    {"id": "acme-site", "provider": "jsonld", "company": "Acme", "urls": ["https://careers.acme.example/jobs/site-pm-1"]},
+    {"id": "official-search", "provider": "google_cse", "query": "AI product manager jobs", "site_search": "careers.acme.example", "api_key_env": "PMHUB_GOOGLE_CSE_KEY", "cx_env": "PMHUB_GOOGLE_CSE_CX", "max_results": 10},
+    {"id": "authorized-export", "provider": "manual_import", "path": "manual.jsonl", "format": "jsonl"}
+  ]
+}

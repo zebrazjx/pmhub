@@ -1,0 +1,18 @@
+[
+  {
+    "id": "lever-101",
+    "text": "AI Product Manager",
+    "categories": {
+      "location": "Shanghai",
+      "allLocations": ["Shanghai"],
+      "commitment": "Full-time",
+      "team": "Product",
+      "department": "Product"
+    },
+    "descriptionPlain": "Own an enterprise AI assistant from discovery through launch. Work with design, engineering, and model teams; define offline evaluation, latency, cost, adoption, and business-success measures.",
+    "hostedUrl": "https://jobs.lever.co/acme/lever-101?lever-source=test",
+    "applyUrl": "https://jobs.lever.co/acme/lever-101/apply",
+    "workplaceType": "hybrid",
+    "createdAt": 1788508800000
+  }
+]

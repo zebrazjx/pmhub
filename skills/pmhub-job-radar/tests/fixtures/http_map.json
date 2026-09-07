@@ -1,0 +1,9 @@
+{
+  "https://boards-api.greenhouse.io/v1/boards/acme/jobs?content=true": "greenhouse.json",
+  "https://api.lever.co/v0/postings/acme?limit=100&mode=json&skip=0": "lever.json",
+  "https://api.ashbyhq.com/posting-api/job-board/Acme?includeCompensation=true": "ashby.json",
+  "https://api.smartrecruiters.com/v1/companies/acme/postings?limit=100&offset=0": "smartrecruiters-list.json",
+  "https://api.smartrecruiters.com/v1/companies/acme/postings/sr-1": "smartrecruiters-detail.json",
+  "https://careers.acme.example/jobs/site-pm-1": "jobposting.html",
+  "https://customsearch.googleapis.com/customsearch/v1?cx=%3Credacted%3E&key=%3Credacted%3E&num=10&q=AI+product+manager+jobs&start=1&siteSearch=careers.acme.example": "google-cse.json"
+}

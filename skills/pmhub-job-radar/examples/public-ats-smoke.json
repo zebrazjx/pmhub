@@ -1,0 +1,16 @@
+{
+  "schema_version": "1",
+  "defaults": {
+    "request_interval_seconds": 1,
+    "timeout_seconds": 15,
+    "max_response_bytes": 8388608,
+    "max_retries": 0
+  },
+  "filters": {"title_include": ["product manager", "product management"]},
+  "sources": [
+    {"id": "smoke-figma", "provider": "greenhouse", "company": "Figma", "board_token": "figma"},
+    {"id": "smoke-lever", "provider": "lever", "company": "Lever", "site": "lever", "max_results": 1},
+    {"id": "smoke-ashby", "provider": "ashby", "company": "Ashby", "board": "ashby"},
+    {"id": "smoke-smartrecruiters", "provider": "smartrecruiters", "company": "SmartRecruiters", "company_identifier": "smartrecruiters", "max_results": 1}
+  ]
+}

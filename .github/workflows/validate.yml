@@ -7,8 +7,28 @@ on:
 jobs:
   validate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@v4
+      - name: Fetch pinned Codex validators
+        uses: actions/checkout@v4
+        with:
+          repository: openai/codex
+          ref: b04ed4c50c5cebb198074c3e5aaf712b989313cc
+          path: .ci/openai-codex
+          sparse-checkout: |
+            codex-rs/skills/src/assets/samples/skill-creator
+            codex-rs/skills/src/assets/samples/plugin-creator
+      - name: Install official validator dependency
+        run: python3 -m pip install --disable-pip-version-check --no-input PyYAML==6.0.2
+      - name: Run official Codex plugin and skill validators
+        run: |
+          validator_root=".ci/openai-codex/codex-rs/skills/src/assets/samples"
+          python3 "$validator_root/plugin-creator/scripts/validate_plugin.py" .
+          for skill_dir in skills/*; do
+            python3 "$validator_root/skill-creator/scripts/quick_validate.py" "$skill_dir"
+          done
       - name: Validate plugin and skills
         run: python3 tools/validate_repo.py
       - name: Validate resume template JavaScript
@@ -20,3 +40,7 @@ jobs:
           python3 -m py_compile skills/pmhub-ai-pm-role-fit/scripts/score_assessment.py skills/pmhub-ai-pm-role-fit/scripts/audit_coverage.py
           python3 skills/pmhub-ai-pm-role-fit/scripts/score_assessment.py --self-test
           python3 skills/pmhub-ai-pm-role-fit/scripts/audit_coverage.py
+      - name: Validate job-radar adapters and safety boundaries
+        run: |
+          python3 -m py_compile skills/pmhub-job-radar/scripts/job_radar.py skills/pmhub-job-radar/tests/test_job_radar.py
+          python3 -m unittest discover -s skills/pmhub-job-radar/tests -v

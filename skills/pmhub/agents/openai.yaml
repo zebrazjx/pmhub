@@ -1,4 +1,4 @@
 interface:
-  display_name: "PMHub｜产品经理求职工作台"
-  short_description: "在方向诊断、JD 分析、AI 原生简历和面试急救之间编排求职流程"
-  default_prompt: "使用 $pmhub 判断我现在处于哪个求职阶段，并调用最合适的 PMHub 组件完成下一步。"
+  display_name: "PMHub｜产品经理求职与实战工作台"
+  short_description: "编排职业规划、岗位雷达、学习、简历、面试和 PM 实战组件"
+  default_prompt: "使用 $pmhub 判断我当前的产品经理目标与阶段，并调用最合适的 PMHub 组件完成下一步。"

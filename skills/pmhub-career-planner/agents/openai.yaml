@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜职业规划"
+  short_description: "用职业资产、情景方案与季度复盘规划多年路径和下一步选择"
+  default_prompt: "使用 $pmhub-career-planner，结合我的经历与现实约束，制定可验证、可调整的多年职业路径。"

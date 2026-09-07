@@ -1,27 +1,27 @@
 {
   "name": "pmhub",
-  "version": "0.2.0",
-  "description": "A modular product-manager job-search toolkit with AI PM role-fit diagnosis, JD analysis, evidence-based resumes, and last-hour interview preparation.",
+  "version": "0.3.0",
+  "description": "A modular product-manager suite for career planning, multi-source job discovery, JD analysis, AI learning, evidence-based resumes, interview practice, and day-to-day product work.",
   "author": {
     "name": "zebrazjx",
     "url": "https://github.com/zebrazjx"
   },
   "homepage": "https://github.com/zebrazjx/pmhub",
   "repository": "https://github.com/zebrazjx/pmhub",
-  "keywords": ["product-manager", "ai-product-manager", "career-fit", "job-search", "resume", "interview", "jd-analysis", "skills"],
+  "keywords": ["product-manager", "ai-product-manager", "career-planning", "job-search", "job-radar", "resume", "interview", "jd-analysis", "product-management", "skills"],
   "skills": "./skills/",
   "interface": {
     "displayName": "PMHub",
-    "shortDescription": "模块化产品经理求职 Skill 套件",
-    "longDescription": "用一次证据访谈比较九类 AI 产品经理方向，再从具体 JD 倒推真实任务与证据缺口，生成可编辑的一页 A4 HTML 简历，并为临近面试准备定向急救包。",
+    "shortDescription": "产品经理求职与实战的模块化 Skill 套件",
+    "longDescription": "覆盖职业规划、AI PM 方向诊断、多来源岗位发现、JD 倒推、AI 学习、证据型简历、面试训练与急救，以及产品发现、PRD、优先级、指标、交付和复盘等日常 PM 工作。",
     "developerName": "zebrazjx",
     "category": "Productivity",
     "capabilities": ["Interactive", "Write"],
     "websiteURL": "https://github.com/zebrazjx/pmhub",
     "defaultPrompt": [
-      "用 PMHub 先诊断我适合的 AI 产品经理方向，再判断目标 JD 是否值得投。",
-      "根据目标 JD，把我的简历做成真实匹配的一页 A4 HTML。",
-      "我马上要面试，请按剩余时间生成产品经理面试急救包。"
+      "用 PMHub 规划我的产品经理求职路径，并从公开来源发现值得跟进的岗位。",
+      "根据目标 JD 找出能力缺口，制定学习计划并把简历改成真实匹配版本。",
+      "陪我做进阶 PM 模拟面试，或完成一个真实产品工作任务并选择合适的交付模板。"
     ]
   }
 }

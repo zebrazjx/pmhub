@@ -1,0 +1,42 @@
+name: Public ATS live smoke
+
+# Opt-in only: normal pushes and pull requests use offline fixtures.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-ats:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate zero-network plan
+        run: >-
+          python3 skills/pmhub-job-radar/scripts/job_radar.py collect
+          --config skills/pmhub-job-radar/examples/public-ats-smoke.json --dry-run
+      - name: Read bounded public ATS sources
+        run: >-
+          python3 skills/pmhub-job-radar/scripts/job_radar.py collect
+          --config skills/pmhub-job-radar/examples/public-ats-smoke.json --live
+          --output /tmp/pmhub-live-jobs.jsonl --report /tmp/pmhub-live-report.json
+          --state /tmp/pmhub-live-state.sqlite3
+      - name: Show source results
+        if: always()
+        run: |
+          if test -f /tmp/pmhub-live-report.json; then
+            python3 -m json.tool /tmp/pmhub-live-report.json
+          fi
+      - name: Keep public run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-ats-smoke-report
+          path: /tmp/pmhub-live-report.json
+          if-no-files-found: ignore
+          retention-days: 7

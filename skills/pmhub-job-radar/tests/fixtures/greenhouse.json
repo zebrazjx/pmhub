@@ -1,0 +1,16 @@
+{
+  "jobs": [
+    {
+      "id": 101,
+      "title": "AI Product Manager",
+      "updated_at": "2026-09-05T10:00:00Z",
+      "location": {"name": "Shanghai"},
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/101?utm_source=test",
+      "language": "en",
+      "content": "<p>Own an enterprise AI assistant from discovery through launch. Work with design, engineering, and model teams; define offline evaluation, latency, cost, adoption, and business-success measures.</p>",
+      "departments": [{"id": 1, "name": "Product"}],
+      "offices": []
+    }
+  ],
+  "meta": {"total": 1}
+}

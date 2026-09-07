@@ -1,0 +1,13 @@
+{
+  "id": "sr-1",
+  "name": "Senior Product Manager, Model Evaluation",
+  "company": {"name": "Acme", "identifier": "acme"},
+  "department": {"id": "product", "label": "Product"},
+  "location": {"city": "Shenzhen", "country": "CN", "remote": false},
+  "experienceLevel": {"id": "senior", "label": "Senior"},
+  "typeOfEmployment": {"id": "full_time", "label": "Full-time"},
+  "releasedDate": "2026-09-03T08:00:00Z",
+  "applyUrl": "https://jobs.smartrecruiters.com/Acme/sr-1",
+  "jobAd": {"sections": {"jobDescription": {"text": "<p>Lead evaluation products for large language models. Define representative test sets, human-review operations, release gates, failure taxonomies, and dashboards used by model and application teams.</p>"}, "qualifications": {"text": "<p>Experience shipping data-informed B2B or developer products with engineering and research partners.</p>"}}},
+  "active": true
+}

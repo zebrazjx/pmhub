@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜AI 学习教练"
+  short_description: "从目标 JD 倒推 AI 学习路线，并用复述、实作和复习形成证据闭环"
+  default_prompt: "使用 $pmhub-ai-learning-coach，根据我的目标 JD 诊断基础并制定一条可验收的 AI 学习与项目路线。"

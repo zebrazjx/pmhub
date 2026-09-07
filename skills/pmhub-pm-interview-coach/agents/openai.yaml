@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜进阶 PM 面试教练"
+  short_description: "多角色动态追问、证据评分与变式复训的互动式 PM 模拟面试"
+  default_prompt: "使用 $pmhub-pm-interview-coach，基于我的目标 JD 和经历进行一轮互动模拟面试，并在追问后评分复训。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PMHub｜岗位雷达"
+  short_description: "合规发现多来源岗位，完成标准化、去重、增量跟踪与来源追溯"
+  default_prompt: "使用 $pmhub-job-radar 从公司官网、公开 ATS 和授权来源建立一份去重后的岗位雷达。"
